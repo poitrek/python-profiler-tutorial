@@ -1,0 +1,11 @@
+    1: from random import randint
+       
+    1: def gcd(a, b):
+    6:     if b == 0:
+    1:         return a
+           else:
+    5:         return gcd(b, a % b)
+       
+       
+    1: if __name__ == '__main__':
+    1:     print(gcd(randint(10, 1000), randint(10, 1000)))

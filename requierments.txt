@@ -1,0 +1,7 @@
+snakeviz
+gprof2dot
+pyinstrument
+
+numpy
+pandas
+scipy

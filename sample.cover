@@ -1,0 +1,32 @@
+    1: from math import sin
+    1: from time import sleep
+       
+    1: def f(x):
+1500000:     return 10.0 * sin(x)
+       
+    1: def compute(n):
+    3:     x = 1
+1500003:     for i in range(n):
+1500000:         x = f(x)
+    3:     return x
+       
+    1: def fun1():
+    1:     return compute(3*10**5)
+       
+    1: def fun2():
+    1:     return compute(5*10**5)
+       
+    1: def fun3():
+    1:     sleep_()
+    1:     return compute(7*10**5)
+       
+    1: def sleep_():
+    2:     sleep(0.1)
+       
+       
+    1: def main():
+    1:     sum = fun1() + fun2() + fun3()
+    1:     sleep_()
+    1:     print('sum: {:.3f}'.format(sum))
+       
+    1: main()

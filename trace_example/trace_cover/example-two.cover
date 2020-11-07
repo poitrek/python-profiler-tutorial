@@ -1,0 +1,11 @@
+   13: from random import randint
+       
+   13: def gcd(a, b):
+   97:     if b == 0:
+   13:         return a
+           else:
+   84:         return gcd(b, a % b)
+       
+       
+   13: if __name__ == '__main__':
+   13:     print(gcd(randint(10, 1000), randint(10, 1000)))

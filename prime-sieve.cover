@@ -1,0 +1,15 @@
+    1: def eratosthenes_sieve(N):
+           # Increment once in order to remove redundancy
+    1:     N += 1
+    1:     prime = [True] * (N)
+    1:     primes_tab = [2]
+  250:     for c in range(3, N, 2):
+  249:         if prime[c] == True:
+   94:             primes_tab.append(c)
+                   # Mark all multiples of c as composite
+  501:             for mul_c in range(c*c, N, c):
+  407:                 prime[mul_c] = False
+    1:     return primes_tab
+       
+    1: if __name__ == '__main__':
+    1:     eratosthenes_sieve(500)
